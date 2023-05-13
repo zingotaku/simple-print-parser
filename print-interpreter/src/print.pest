@@ -1,0 +1,3 @@
+print_statement = { "print" ~ "(" ~ string ~ ")" }
+string = { "\"" ~ inner_string ~ "\"" }
+inner_string = _{ (!"\"" ~ ANY)* }
